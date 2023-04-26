@@ -27,7 +27,8 @@ class Timer:
             self.__minutes += 1
             if self.__minutes == 60:
                 self.__minutes = 0
-                if self.__hours == 23:
+                self.__hours += 1
+                if self.__hours == 24:
                     self.__hours = 0
     def prev_second(self):
         self.__seconds -= 1
